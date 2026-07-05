@@ -1,0 +1,1 @@
+A modern wildlife exploration platform that allows users to discover animals, learn detailed information about different species, and manage their favorite wildlife through a responsive and user-friendly interface.
