@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conservation Stats — WildVerse</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Mobile nav -->
+<input type="checkbox" id="nav-toggle" class="nav-toggle">
+<div class="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="explore.html">Explore All</a>
+  <a href="stats.html">Stats</a>
+</div>
+
+<nav>
+  <a href="index.html" class="nav-logo">Wild<em>Verse</em></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="explore.html">Explore All</a></li>
+    <li><a href="stats.html" class="active">Stats</a></li>
+  </ul>
+  <label for="nav-toggle" class="hamburger">
+    <span></span><span></span><span></span>
+  </label>
+</nav>
+
+<!-- ===== HERO ===== -->
+<div class="stats-hero">
+  <h1>Conservation<em>by the numbers</em></h1>
+  <p>The state of Earth's wildlife is a story of both crisis and hope. These figures represent the scale of the challenge — and why biodiversity matters more than ever.</p>
+</div>
+
+<!-- ===== BIG NUMBER CALLOUTS ===== -->
+<div class="stat-callouts">
+  <div class="stat-callout">
+    <div class="stat-number" style="color:var(--danger)">44,000+</div>
+    <div class="stat-callout-label">Species currently threatened with extinction on the IUCN Red List</div>
+  </div>
+  <div class="stat-callout">
+    <div class="stat-number" style="color:#e8b45a">1M+</div>
+    <div class="stat-callout-label">Animal and plant species facing extinction — many within decades</div>
+  </div>
+  <div class="stat-callout">
+    <div class="stat-number" style="color:var(--accent)">69%</div>
+    <div class="stat-callout-label">Decline in average wildlife population sizes since 1970</div>
+  </div>
+  <div class="stat-callout">
+    <div class="stat-number" style="color:var(--accent2)">150–200</div>
+    <div class="stat-callout-label">Species estimated to go extinct every single day</div>
+  </div>
+</div>
+
+<!-- ===== CSS BAR CHART: Species by status ===== -->
+<div class="chart-section" style="padding-top:0;">
+  <h2>Species by Conservation Status</h2>
+  <p>Approximate proportion of assessed species in each IUCN Red List category (2024 data).</p>
+
+  <div class="bar-chart" style="margin-top:32px;">
+
+    <div class="bar-row">
+      <div class="bar-label">Least Concern</div>
+      <div class="bar-track">
+        <div class="bar-fill bar-lc" style="width:58%">58%</div>
+      </div>
+      <div class="bar-value">~160,000 spp</div>
+    </div>
+
+    <div class="bar-row">
+      <div class="bar-label">Vulnerable</div>
+      <div class="bar-track">
+        <div class="bar-fill bar-vu" style="width:14%">14%</div>
+      </div>
+      <div class="bar-value">~10,500 spp</div>
+    </div>
+
+    <div class="bar-row">
+      <div class="bar-label">Endangered</div>
+      <div class="bar-track">
+        <div class="bar-fill bar-en" style="width:11%">11%</div>
+      </div>
+      <div class="bar-value">~8,400 spp</div>
+    </div>
+
+    <div class="bar-row">
+      <div class="bar-label">Critically Endangered</div>
+      <div class="bar-track">
+        <div class="bar-fill bar-cr" style="width:8%">8%</div>
+      </div>
+      <div class="bar-value">~8,200 spp</div>
+    </div>
+
+    <div class="bar-row">
+      <div class="bar-label">Extinct (modern era)</div>
+      <div class="bar-track">
+        <div class="bar-fill bar-ex" style="width:5%">5%</div>
+      </div>
+      <div class="bar-value">~900 spp</div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ===== CSS BAR CHART: Habitat loss by region ===== -->
+<div class="chart-section">
+  <h2>Forest Cover Lost Since 1990</h2>
+  <p>Percentage of original forest cover lost per region, a primary driver of species decline.</p>
+
+  <div class="bar-chart" style="margin-top:32px;">
+    <div class="bar-row">
+      <div class="bar-label">Southeast Asia</div>
+      <div class="bar-track">
+        <div class="bar-fill bar-cr" style="width:72%">72%</div>
+      </div>
+      <div class="bar-value">Severe</div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-label">West Africa</div>
+      <div class="bar-track">
+        <div class="bar-fill bar-cr" style="width:65%">65%</div>
+      </div>
+      <div class="bar-value">Severe</div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-label">Central America</div>
+      <div class="bar-track">
+        <div class="bar-fill bar-en" style="width:48%">48%</div>
+      </div>
+      <div class="bar-value">High</div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-label">South America</div>
+      <div class="bar-track">
+        <div class="bar-fill bar-vu" style="width:32%">32%</div>
+      </div>
+      <div class="bar-value">Moderate</div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-label">Central Africa</div>
+      <div class="bar-track">
+        <div class="bar-fill bar-vu" style="width:22%">22%</div>
+      </div>
+      <div class="bar-value">Moderate</div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-label">Europe</div>
+      <div class="bar-track">
+        <div class="bar-fill bar-lc" style="width:8%">8%</div>
+      </div>
+      <div class="bar-value">Low</div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== THREAT CARDS ===== -->
+<div class="chart-section">
+  <h2>Top Threats to Biodiversity</h2>
+  <p>The primary human-driven causes of species decline worldwide.</p>
+</div>
+
+<div class="threat-grid" style="padding-top:0;">
+  <div class="threat-card">
+    <div class="threat-icon">🌳</div>
+    <div class="threat-name">Habitat Loss</div>
+    <div class="threat-desc">Deforestation, agricultural expansion, and urban development destroy the living space species depend on.</div>
+    <div class="threat-pct">83%</div>
+    <div style="font-size:12px;color:var(--muted)">of threatened species affected</div>
+  </div>
+  <div class="threat-card">
+    <div class="threat-icon">🎯</div>
+    <div class="threat-name">Overexploitation</div>
+    <div class="threat-desc">Hunting, poaching, and overfishing remove species from ecosystems faster than they can recover.</div>
+    <div class="threat-pct">37%</div>
+    <div style="font-size:12px;color:var(--muted)">of threatened species affected</div>
+  </div>
+  <div class="threat-card">
+    <div class="threat-icon">🌡️</div>
+    <div class="threat-name">Climate Change</div>
+    <div class="threat-desc">Shifting temperatures, extreme weather, and ocean acidification alter or destroy entire habitats.</div>
+    <div class="threat-pct">19%</div>
+    <div style="font-size:12px;color:var(--muted)">of threatened species affected</div>
+  </div>
+  <div class="threat-card">
+    <div class="threat-icon">🐀</div>
+    <div class="threat-name">Invasive Species</div>
+    <div class="threat-desc">Non-native animals, plants, and diseases outcompete or prey on species with no natural defences.</div>
+    <div class="threat-pct">22%</div>
+    <div style="font-size:12px;color:var(--muted)">of threatened species affected</div>
+  </div>
+  <div class="threat-card">
+    <div class="threat-icon">☠️</div>
+    <div class="threat-name">Pollution</div>
+    <div class="threat-desc">Pesticides, plastics, heavy metals, and light pollution degrade ecosystems and poison food chains.</div>
+    <div class="threat-pct">14%</div>
+    <div style="font-size:12px;color:var(--muted)">of threatened species affected</div>
+  </div>
+  <div class="threat-card">
+    <div class="threat-icon">🌊</div>
+    <div class="threat-name">Ocean Degradation</div>
+    <div class="threat-desc">Coral bleaching, ocean acidification, and plastic pollution threaten marine ecosystems at every level.</div>
+    <div class="threat-pct">30%</div>
+    <div style="font-size:12px;color:var(--muted)">of marine species threatened</div>
+  </div>
+</div>
+
+<!-- ===== TIMELINE ===== -->
+<div class="timeline">
+  <h2>A Timeline of Loss &amp; Hope</h2>
+  <p>Key milestones in wildlife conservation history.</p>
+
+  <div class="timeline-track">
+
+    <div class="tl-item tl-danger">
+      <div class="tl-year">1662</div>
+      <div class="tl-name">Dodo goes extinct</div>
+      <div class="tl-desc">The first widely-documented species extinction caused by human activity — a warning the world largely ignored for centuries.</div>
+    </div>
+
+    <div class="tl-item tl-danger">
+      <div class="tl-year">1914</div>
+      <div class="tl-name">Passenger Pigeon extinct</div>
+      <div class="tl-desc">Martha, the last passenger pigeon, dies in Cincinnati Zoo. Once the most numerous bird in North America — now gone forever due to industrial hunting.</div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-year">1948</div>
+      <div class="tl-name">IUCN Founded</div>
+      <div class="tl-desc">The International Union for Conservation of Nature is established — the world's first global environmental organisation and keeper of the Red List.</div>
+    </div>
+
+    <div class="tl-item tl-danger">
+      <div class="tl-year">1936</div>
+      <div class="tl-name">Thylacine extinct</div>
+      <div class="tl-desc">The last known Tasmanian tiger dies in Hobart Zoo on 7 September, after the species was hunted to extinction across its entire range.</div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-year">1963</div>
+      <div class="tl-name">IUCN Red List launched</div>
+      <div class="tl-desc">The world's most comprehensive inventory of threatened species is published for the first time, giving conservation a scientific framework.</div>
+    </div>
+
+    <div class="tl-item tl-warn">
+      <div class="tl-year">1970s</div>
+      <div class="tl-name">Bald Eagle near-extinction</div>
+      <div class="tl-desc">Fewer than 500 nesting pairs remain due to DDT pesticide use and habitat loss. A landmark conservation success story begins.</div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-year">1973</div>
+      <div class="tl-name">CITES adopted</div>
+      <div class="tl-desc">The Convention on International Trade in Endangered Species comes into force, regulating the global wildlife trade and protecting thousands of species.</div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-year">1995</div>
+      <div class="tl-name">Wolf reintroduction to Yellowstone</div>
+      <div class="tl-desc">Gray wolves are reintroduced to Yellowstone National Park, triggering a "trophic cascade" that restored rivers, vegetation, and entire ecosystems.</div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-year">2007</div>
+      <div class="tl-name">Bald Eagle delisted</div>
+      <div class="tl-desc">The bald eagle is removed from the U.S. Endangered Species List after populations recover to over 10,000 nesting pairs — one of conservation's greatest victories.</div>
+    </div>
+
+    <div class="tl-item tl-warn">
+      <div class="tl-year">2018</div>
+      <div class="tl-name">Last male Northern White Rhino dies</div>
+      <div class="tl-desc">Sudan, the world's last male northern white rhino, dies in Kenya. Only two females remain. Scientists race to use assisted reproduction to save the subspecies.</div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-year">2022</div>
+      <div class="tl-name">Kunming-Montréal Agreement</div>
+      <div class="tl-desc">196 countries agree to protect 30% of Earth's land and oceans by 2030 — the most ambitious global biodiversity commitment in history.</div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-year">2024</div>
+      <div class="tl-name">Mountain Gorilla population passes 1,000</div>
+      <div class="tl-desc">Thanks to decades of sustained conservation and ecotourism, mountain gorilla numbers cross 1,000 individuals for the first time — a rare good news story.</div>
+    </div>
+
+  </div>
+</div>
+
+<!-- CTA -->
+<div style="padding: 0 48px 80px; text-align:center;">
+  <h2 style="font-family:var(--serif);font-size:32px;color:var(--text);margin-bottom:12px;">Every species has a story worth saving</h2>
+  <p style="color:var(--muted);font-size:15px;max-width:480px;margin:0 auto 32px;line-height:1.7;">Explore the animals at risk and learn what makes each one irreplaceable.</p>
+  <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+    <a href="animals/endangered.html" class="btn-primary">View Endangered Species</a>
+    <a href="explore.html" class="btn-ghost">Explore All Animals</a>
+  </div>
+</div>
+
+<footer>
+  <span class="footer-logo">WildVerse</span>
+  <p>Data sourced from IUCN Red List &amp; WWF Living Planet Report</p>
+</footer>
+
+</body>
+</html>

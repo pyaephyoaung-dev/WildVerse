@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WildVerse — Explore the Animal World</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== MOBILE NAV TOGGLE (checkbox hack) ===== -->
+<input type="checkbox" id="nav-toggle" class="nav-toggle">
+<div class="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="explore.html">Explore All</a>
+  <a href="stats.html">Conservation Stats</a>
+  <a href="animals/mammals.html">Mammals</a>
+  <a href="animals/reptiles.html">Reptiles</a>
+  <a href="animals/birds.html">Birds</a>
+  <a href="animals/extinct.html">Extinct</a>
+</div>
+
+<nav>
+  <a href="index.html" class="nav-logo">Wild<em>Verse</em></a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="explore.html">Explore All</a></li>
+    <li><a href="stats.html">Stats</a></li>
+  </ul>
+  <label for="nav-toggle" class="hamburger">
+    <span></span><span></span><span></span>
+  </label>
+</nav>
+
+<section class="hero">
+  <div class="hero-slides">
+    <img class="hero-slide" src="images/Grizzly Bear1.webp" alt="Grizzly Bear">
+    <img class="hero-slide" src="images/Sumatran Tiger1.jpg" alt="Sumatran Tiger">
+    <img class="hero-slide" src="images/Axolotl1.jpg" alt="Axolotl">
+    <img class="hero-slide" src="images/Red Panda1.avif" alt="Red Panda">
+  </div>
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <p class="hero-eyebrow">Discover the animal kingdom</p>
+    <h1 class="hero-title">
+      Every creature<em>has a story</em>
+    </h1>
+    <p class="hero-sub">
+      Explore the beauty, diversity, and fragility of wildlife across
+      mammals, reptiles, amphibians, birds, and beyond.
+    </p>
+    <div class="hero-cta">
+      <a href="#categories" class="btn-primary">
+        Start Exploring
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <a href="#categories" class="btn-ghost">Browse categories</a>
+    </div>
+  </div>
+
+  <div class="hero-dots">
+    <div class="hero-dot"></div>
+    <div class="hero-dot"></div>
+    <div class="hero-dot"></div>
+    <div class="hero-dot"></div>
+  </div>
+</section>
+
+<section class="section" id="categories">
+  <p class="section-label">Browse by type</p>
+  <h2 class="section-title">Choose a <em>Category</em></h2>
+  <p class="section-sub">Select a group to explore the animals within it</p>
+
+  <div class="category-grid">
+
+    <a href="animals/mammals.html" class="cat-card">
+      <img src="images/Margay1.jpg" alt="Mammals" class="cat-card-img">
+      <div class="cat-card-body">
+        <div class="cat-card-icon">🦁</div>
+        <div class="cat-card-name">Mammals</div>
+        <div class="cat-card-desc">Warm-blooded vertebrates with hair or fur, nursing young with milk.</div>
+        <div class="cat-card-count">35 species featured →</div>
+      </div>
+    </a>
+
+    <a href="animals/reptiles.html" class="cat-card">
+      <img src="images/Burmese Python1.avif" alt="Reptiles" class="cat-card-img">
+      <div class="cat-card-body">
+        <div class="cat-card-icon">🐊</div>
+        <div class="cat-card-name">Reptiles</div>
+        <div class="cat-card-desc">Cold-blooded animals with scales, breathing air and usually laying eggs.</div>
+        <div class="cat-card-count">23 species featured →</div>
+      </div>
+    </a>
+
+    <a href="animals/birds.html" class="cat-card">
+      <img src="images/Bald Eagle1.avif" alt="Birds" class="cat-card-img">
+      <div class="cat-card-body">
+        <div class="cat-card-icon">🦅</div>
+        <div class="cat-card-name">Birds</div>
+        <div class="cat-card-desc">Feathered, warm-blooded vertebrates with beaks and wings.</div>
+        <div class="cat-card-count">29 species featured →</div>
+      </div>
+    </a>
+
+    <a href="animals/amphibians.html" class="cat-card">
+      <img src="images/Axolotl1.jpg" alt="Amphibians" class="cat-card-img">
+      <div class="cat-card-body">
+        <div class="cat-card-icon">🐸</div>
+        <div class="cat-card-name">Amphibians</div>
+        <div class="cat-card-desc">Cold-blooded vertebrates that live both in water and on land.</div>
+        <div class="cat-card-count">19 species featured →</div>
+      </div>
+    </a>
+
+    <a href="animals/marine.html" class="cat-card">
+      <img src="images/Immortal Jellyfish1.jpg" alt="Marine Life" class="cat-card-img">
+      <div class="cat-card-body">
+        <div class="cat-card-icon">🐋</div>
+        <div class="cat-card-name">Marine Life</div>
+        <div class="cat-card-desc">Creatures that call the ocean, seas, and waterways their home.</div>
+        <div class="cat-card-count">22 species featured →</div>
+      </div>
+    </a>
+
+    <a href="animals/insects.html" class="cat-card">
+      <img src="images/Peacock Spider1.jpg" alt="Insects" class="cat-card-img">
+      <div class="cat-card-body">
+        <div class="cat-card-icon">🦋</div>
+        <div class="cat-card-name">Insects</div>
+        <div class="cat-card-desc">Six-legged arthropods — the most species-rich group on Earth.</div>
+        <div class="cat-card-count">20 species featured →</div>
+      </div>
+    </a>
+
+    <a href="animals/extinct.html" class="cat-card">
+      <span class="cat-badge badge-extinct">† Extinct</span>
+      <img src="images/Smilodon1.webp" alt="Extinct" class="cat-card-img">
+      <div class="cat-card-body">
+        <div class="cat-card-icon">🦕</div>
+        <div class="cat-card-name">Extinct</div>
+        <div class="cat-card-desc">Species that once roamed the Earth but are no longer with us.</div>
+        <div class="cat-card-count">23 species featured →</div>
+      </div>
+    </a>
+
+    <a href="animals/endangered.html" class="cat-card">
+      <span class="cat-badge badge-endangered">⚠ Endangered</span>
+      <img src="images/Zanzibar Leopard1.jpg" alt="Endangered" class="cat-card-img">
+      <div class="cat-card-body">
+        <div class="cat-card-icon">🔴</div>
+        <div class="cat-card-name">Endangered</div>
+        <div class="cat-card-desc">Species facing critical risk of extinction due to habitat loss and human activity.</div>
+        <div class="cat-card-count">26 species featured →</div>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<footer>
+  <span class="footer-logo">Wild<em>Verse</em></span>
+  <p>A project to celebrate Earth's biodiversity</p>
+</footer>
+
+</body>
+</html>

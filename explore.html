@@ -1,0 +1,1783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore All Animals — WildVerse</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-toggle" class="nav-toggle">
+<div class="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="explore.html">Explore All</a>
+  <a href="stats.html">Stats</a>
+</div>
+
+<nav>
+  <a href="index.html" class="nav-logo">Wild<em>Verse</em></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="explore.html" class="active">Explore All</a></li>
+    <li><a href="stats.html">Stats</a></li>
+  </ul>
+  <label for="nav-toggle" class="hamburger">
+    <span></span><span></span><span></span>
+  </label>
+</nav>
+
+<input type="radio" name="cat-filter" id="filter-all"        class="filter-radio" checked>
+<input type="radio" name="cat-filter" id="filter-mammal"     class="filter-radio">
+<input type="radio" name="cat-filter" id="filter-reptile"    class="filter-radio">
+<input type="radio" name="cat-filter" id="filter-bird"       class="filter-radio">
+<input type="radio" name="cat-filter" id="filter-marine"     class="filter-radio">
+<input type="radio" name="cat-filter" id="filter-insect"     class="filter-radio">
+<input type="radio" name="cat-filter" id="filter-amphibian"  class="filter-radio">
+<input type="radio" name="cat-filter" id="filter-extinct"    class="filter-radio">
+<input type="radio" name="cat-filter" id="filter-endangered" class="filter-radio">
+
+<!-- Page header -->
+<div class="page-header">
+  <h1>Explore <em>All Animals</em></h1>
+  <p>Browse all 197 species across every category. Filter by group using the pills below.</p>
+</div>
+
+<!-- Filter pill bar -->
+<div class="filter-bar">
+  <label for="filter-all"        class="filter-pill">🌍 All</label>
+  <label for="filter-mammal"     class="filter-pill">🦁 Mammals</label>
+  <label for="filter-reptile"    class="filter-pill">🐊 Reptiles</label>
+  <label for="filter-bird"       class="filter-pill">🦅 Birds</label>
+  <label for="filter-marine"     class="filter-pill">🐋 Marine</label>
+  <label for="filter-insect"     class="filter-pill">🦋 Insects</label>
+  <label for="filter-amphibian"  class="filter-pill">🐸 Amphibians</label>
+  <label for="filter-extinct"    class="filter-pill">🦕 Extinct</label>
+  <label for="filter-endangered" class="filter-pill">🔴 Endangered</label>
+</div>
+
+<!-- ===== ALL ANIMALS GRID ===== -->
+<div class="explore-grid">
+
+  <a href="detail/aardvark.html" class="explore-card" data-cat="mammal">
+    <img src="images/Aardvark1.jpg" alt="Aardvark" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦁 Mammal</div>
+      <div class="explore-card-name">Aardvark</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/aepyornis.html" class="explore-card" data-cat="extinct">
+    <img src="images/Aepyornis1.webp" alt="Aepyornis" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦕 Extinct</div>
+      <div class="explore-card-name">Aepyornis</div>
+      <span class="status-badge status-ex">EX</span>
+    </div>
+  </a>
+
+  <a href="detail/elephant.html" class="explore-card" data-cat="mammal">
+    <img src="images/African Elephant1.webp" alt="African Elephant" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦁 Mammal</div>
+      <div class="explore-card-name">African Elephant</div>
+      <span class="status-badge status-vu">VU</span>
+    </div>
+  </a>
+
+  <a href="detail/parrot.html" class="explore-card" data-cat="bird">
+    <img src="images/African Grey Parrot1.jpg" alt="African Grey Parrot" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦅 Bird</div>
+      <div class="explore-card-name">African Grey Parrot</div>
+      <span class="status-badge status-en">EN</span>
+    </div>
+  </a>
+
+  <a href="detail/lion.html" class="explore-card" data-cat="mammal">
+    <img src="images/African Lion1.jpeg" alt="African Lion" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦁 Mammal</div>
+      <div class="explore-card-name">African Lion</div>
+      <span class="status-badge status-vu">VU</span>
+    </div>
+  </a>
+
+  <a href="detail/alpine-newt.html" class="explore-card" data-cat="amphibian">
+    <img src="images/American Alligator1.jpg" alt="Alpine Newt" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐸 Amphibian</div>
+      <div class="explore-card-name">Alpine Newt</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/ambulocetus.html" class="explore-card" data-cat="extinct">
+    <img src="images/Ambulocetus1.jpg" alt="Ambulocetus" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦕 Extinct</div>
+      <div class="explore-card-name">Ambulocetus</div>
+      <span class="status-badge status-ex">EX</span>
+    </div>
+  </a>
+
+  <a href="detail/american-alligator.html" class="explore-card" data-cat="reptile">
+    <img src="images/American Alligator1.jpg" alt="American Alligator" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐊 Reptile</div>
+      <div class="explore-card-name">American Alligator</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/amur-leopard.html" class="explore-card" data-cat="endangered">
+    <img src="images/Amur Leopard1.jpg" alt="Amur Leopard" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🔴 Endangered</div>
+      <div class="explore-card-name">Amur Leopard</div>
+      <span class="status-badge status-cr">CR</span>
+    </div>
+  </a>
+
+  <a href="detail/anglerfish.html" class="explore-card" data-cat="marine">
+    <img src="images/Anglerfish1.jpg" alt="Anglerfish" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐋 Marine</div>
+      <div class="explore-card-name">Anglerfish</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/antelope.html" class="explore-card" data-cat="mammal">
+    <img src="images/Antelope1.jpg" alt="Antelope" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦁 Mammal</div>
+      <div class="explore-card-name">Antelope</div>
+      <span class="status-badge status-vu">VU</span>
+    </div>
+  </a>
+
+  <a href="detail/arctodus.html" class="explore-card" data-cat="extinct">
+    <img src="images/Arctodus1.webp" alt="Arctodus" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦕 Extinct</div>
+      <div class="explore-card-name">Arctodus</div>
+      <span class="status-badge status-ex">EX</span>
+    </div>
+  </a>
+
+  <a href="detail/atlantic-puffin.html" class="explore-card" data-cat="bird">
+    <img src="images/Atlantic Puffin1.jpeg" alt="Atlantic Puffin" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦅 Bird</div>
+      <div class="explore-card-name">Atlantic Puffin</div>
+      <span class="status-badge status-vu">VU</span>
+    </div>
+  </a>
+
+  <a href="detail/atlantic-wolffish.html" class="explore-card" data-cat="marine">
+    <img src="images/Atlantic Wolffish1.jpg" alt="Atlantic Wolffish" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐋 Marine</div>
+      <div class="explore-card-name">Atlantic Wolffish</div>
+      <span class="status-badge status-vu">VU</span>
+    </div>
+  </a>
+
+  <a href="detail/atlas-moth.html" class="explore-card" data-cat="insect">
+    <img src="images/Atlas Moth1.jpg" alt="Atlas Moth" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦋 Insect</div>
+      <div class="explore-card-name">Atlas Moth</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/axolotl.html" class="explore-card" data-cat="amphibian">
+    <img src="images/Axolotl1.jpg" alt="Axolotl" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐸 Amphibian</div>
+      <div class="explore-card-name">Axolotl</div>
+      <span class="status-badge status-cr">CR</span>
+    </div>
+  </a>
+
+  <a href="detail/eagle.html" class="explore-card" data-cat="bird">
+    <img src="images/Bald Eagle1.avif" alt="Bald Eagle" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦅 Bird</div>
+      <div class="explore-card-name">Bald Eagle</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/ball-python.html" class="explore-card" data-cat="reptile">
+    <img src="images/Ball Python1.webp" alt="Ball Python" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐊 Reptile</div>
+      <div class="explore-card-name">Ball Python</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/banded-garden-spider.html" class="explore-card" data-cat="insect">
+    <img src="images/Banded Garden Spider1.jpg" alt="Banded Garden Spider" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦋 Insect</div>
+      <div class="explore-card-name">Banded Garden Spider</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/barn-owl.html" class="explore-card" data-cat="bird">
+    <img src="images/Barn Owl1.jpg" alt="Barn Owl" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦅 Bird</div>
+      <div class="explore-card-name">Barn Owl</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/barrel-eye-fish.html" class="explore-card" data-cat="marine">
+    <img src="images/Barreleye Fish1.webp" alt="Barrel Eye Fish" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐋 Marine</div>
+      <div class="explore-card-name">Barrel Eye Fish</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/beelzebufo.html" class="explore-card" data-cat="extinct">
+    <img src="images/Beelzebufo1.jpg" alt="Beelzebufo" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦕 Extinct</div>
+      <div class="explore-card-name">Beelzebufo</div>
+      <span class="status-badge status-ex">EX</span>
+    </div>
+  </a>
+
+  <a href="detail/tiger.html" class="explore-card" data-cat="mammal">
+    <img src="images/Bengal Tiger1.webp" alt="Bengal Tiger" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦁 Mammal</div>
+      <div class="explore-card-name">Bengal Tiger</div>
+      <span class="status-badge status-vu">VU</span>
+    </div>
+  </a>
+
+  <a href="detail/binturong.html" class="explore-card" data-cat="mammal">
+    <img src="images/Binturong1.avif" alt="Binturong" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦁 Mammal</div>
+      <div class="explore-card-name">Binturong</div>
+      <span class="status-badge status-vu">VU</span>
+    </div>
+  </a>
+
+  <a href="detail/black-mamba.html" class="explore-card" data-cat="reptile">
+    <img src="images/Black Mamba1.jpg" alt="Black Mamba" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐊 Reptile</div>
+      <div class="explore-card-name">Black Mamba</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/blue-whale.html" class="explore-card" data-cat="marine">
+    <img src="images/Blue Whale1.webp" alt="Blue Whale" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐋 Marine</div>
+      <div class="explore-card-name">Blue Whale</div>
+      <span class="status-badge status-en">EN</span>
+    </div>
+  </a>
+
+  <a href="detail/blue-ringed-octopus.html" class="explore-card" data-cat="marine">
+    <img src="images/Blue-Ringed Octopus1.jpg" alt="Blue-Ringed Octopus" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐋 Marine</div>
+      <div class="explore-card-name">Blue-Ringed Octopus</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/orangutan.html" class="explore-card" data-cat="mammal">
+    <img src="images/Bornean Orangutan1.webp" alt="Bornean Orangutan" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦁 Mammal</div>
+      <div class="explore-card-name">Bornean Orangutan</div>
+      <span class="status-badge status-cr">CR</span>
+    </div>
+  </a>
+
+  <a href="detail/borneo-pygmy-elephant.html" class="explore-card" data-cat="endangered">
+    <img src="images/Borneo Pygmy Elephant1.jpg" alt="Borneo Pygmy Elephant" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🔴 Endangered</div>
+      <div class="explore-card-name">Borneo Pygmy Elephant</div>
+      <span class="status-badge status-en">EN</span>
+    </div>
+  </a>
+
+  <a href="detail/dolphin.html" class="explore-card" data-cat="mammal">
+    <img src="images/Bottlenose Dolphin1.jpg" alt="Bottlenose Dolphin" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦁 Mammal</div>
+      <div class="explore-card-name">Bottlenose Dolphin</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/burmese-python.html" class="explore-card" data-cat="reptile">
+    <img src="images/Burmese Python1.avif" alt="Burmese Python" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐊 Reptile</div>
+      <div class="explore-card-name">Burmese Python</div>
+      <span class="status-badge status-nt">NT</span>
+    </div>
+  </a>
+
+  <a href="detail/california-condor.html" class="explore-card" data-cat="bird">
+    <img src="images/California Condor1.avif" alt="California Condor" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦅 Bird</div>
+      <div class="explore-card-name">California Condor</div>
+      <span class="status-badge status-cr">CR</span>
+    </div>
+  </a>
+
+  <a href="detail/capybara.html" class="explore-card" data-cat="mammal">
+    <img src="images/Capybara1.webp" alt="Capybara" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦁 Mammal</div>
+      <div class="explore-card-name">Capybara</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/carolina-anole.html" class="explore-card" data-cat="reptile">
+    <img src="images/Carolina Anole1.jpg" alt="Carolina Anole" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐊 Reptile</div>
+      <div class="explore-card-name">Carolina Anole</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/carpenter-ant.html" class="explore-card" data-cat="insect">
+    <img src="images/Carpenter Ant1.jpg" alt="Carpenter Ant" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦋 Insect</div>
+      <div class="explore-card-name">Carpenter Ant</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/castoroides.html" class="explore-card" data-cat="extinct">
+    <img src="images/Castoroides1.jpg" alt="Castoroides" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦕 Extinct</div>
+      <div class="explore-card-name">Castoroides</div>
+      <span class="status-badge status-ex">EX</span>
+    </div>
+  </a>
+
+  <a href="detail/cheetah.html" class="explore-card" data-cat="mammal">
+    <img src="images/Cheetah1.jpg" alt="Cheetah" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦁 Mammal</div>
+      <div class="explore-card-name">Cheetah</div>
+      <span class="status-badge status-vu">VU</span>
+    </div>
+  </a>
+
+  <a href="detail/salamander.html" class="explore-card" data-cat="amphibian">
+    <img src="https://cdn.i-scmp.com/sites/default/files/d8/images/canvas/2022/05/28/882ef127-52da-43ce-afc3-a07d4d87bdae_e8bb8910.jpg" alt="Chinese Giant Salamander" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐸 Amphibian</div>
+      <div class="explore-card-name">Chinese Giant Salamander</div>
+      <span class="status-badge status-cr">CR</span>
+    </div>
+  </a>
+
+  <a href="detail/cicada-killer-wasp.html" class="explore-card" data-cat="insect">
+    <img src="images/Cicada Killer Wasp1.jpg" alt="Cicada Killer Wasp" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦋 Insect</div>
+      <div class="explore-card-name">Cicada Killer Wasp</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/clownfish.html" class="explore-card" data-cat="marine">
+    <img src="images/Clownfish1.jpg" alt="Clownfish" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐋 Marine</div>
+      <div class="explore-card-name">Clownfish</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/cobalt-blue-tarantula.html" class="explore-card" data-cat="insect">
+    <img src="images/Cobalt Blue Tarantula1.webp" alt="Cobalt Blue Tarantula" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦋 Insect</div>
+      <div class="explore-card-name">Cobalt Blue Tarantula</div>
+      <span class="status-badge status-nt">NT</span>
+    </div>
+  </a>
+
+  <a href="detail/comb-jelly.html" class="explore-card" data-cat="marine">
+    <img src="images/Comb Jelly1.webp" alt="Comb Jelly" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐋 Marine</div>
+      <div class="explore-card-name">Comb Jelly</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/dragonfly.html" class="explore-card" data-cat="insect">
+    <img src="images/Common Dragonfly1.jpg" alt="Common Dragonfly" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦋 Insect</div>
+      <div class="explore-card-name">Common Dragonfly</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/common-midwife-toad.html" class="explore-card" data-cat="amphibian">
+    <img src="images/Common Midwife Toad1.webp" alt="Common Midwife Toad" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐸 Amphibian</div>
+      <div class="explore-card-name">Common Midwife Toad</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/cross-river-gorilla.html" class="explore-card" data-cat="endangered">
+    <img src="images/Cross River Gorilla1.jpg" alt="Cross River Gorilla" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🔴 Endangered</div>
+      <div class="explore-card-name">Cross River Gorilla</div>
+      <span class="status-badge status-cr">CR</span>
+    </div>
+  </a>
+
+  <a href="detail/deaths-head-hawkmoth.html" class="explore-card" data-cat="insect">
+    <img src="images/Death's-head Hawkmoth1.jpg" alt="Death's-head Hawkmoth" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦋 Insect</div>
+      <div class="explore-card-name">Death's-head Hawkmoth</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/deep-sea-dragonfish.html" class="explore-card" data-cat="marine">
+    <img src="images/Deep Sea Dragonfish1.jpg" alt="Deep Sea Dragonfish" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐋 Marine</div>
+      <div class="explore-card-name">Deep Sea Dragonfish</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/desert-horned-lizard.html" class="explore-card" data-cat="reptile">
+    <img src="images/Desert Horned Lizard1.jpg" alt="Desert Horned Lizard" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐊 Reptile</div>
+      <div class="explore-card-name">Desert Horned Lizard</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/dhole.html" class="explore-card" data-cat="mammal">
+    <img src="images/Dhole1.webp" alt="Dhole" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦁 Mammal</div>
+      <div class="explore-card-name">Dhole</div>
+      <span class="status-badge status-en">EN</span>
+    </div>
+  </a>
+
+  <a href="detail/dodo.html" class="explore-card" data-cat="extinct">
+    <img src="images/Dodo1.jpg" alt="Dodo" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦕 Extinct</div>
+      <div class="explore-card-name">Dodo</div>
+      <span class="status-badge status-ex">EX</span>
+    </div>
+  </a>
+
+  <a href="detail/dugong.html" class="explore-card" data-cat="endangered">
+    <img src="images/Dugong1.jpg" alt="Dugong" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🔴 Endangered</div>
+      <div class="explore-card-name">Dugong</div>
+      <span class="status-badge status-vu">VU</span>
+    </div>
+  </a>
+
+  <a href="detail/dunkleosteus.html" class="explore-card" data-cat="extinct">
+    <img src="images/Dunkleosteus1.jpg" alt="Dunkleosteus" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦕 Extinct</div>
+      <div class="explore-card-name">Dunkleosteus</div>
+      <span class="status-badge status-ex">EX</span>
+    </div>
+  </a>
+
+  <a href="detail/dusky-grouse.html" class="explore-card" data-cat="bird">
+    <img src="images/Dusky Grouse1.jpeg" alt="Dusky Grouse" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦅 Bird</div>
+      <div class="explore-card-name">Dusky Grouse</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/eastern-bluebird.html" class="explore-card" data-cat="bird">
+    <img src="images/Eastern Bluebird1.jpg" alt="Eastern Bluebird" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦅 Bird</div>
+      <div class="explore-card-name">Eastern Bluebird</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/eastern-box-turtle.html" class="explore-card" data-cat="reptile">
+    <img src="images/Eastern Box Turtle1.webp" alt="Eastern Box Turtle" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐊 Reptile</div>
+      <div class="explore-card-name">Eastern Box Turtle</div>
+      <span class="status-badge status-nt">NT</span>
+    </div>
+  </a>
+
+  <a href="detail/eastern-newt.html" class="explore-card" data-cat="amphibian">
+    <img src="images/Eastern Newt1.jpg" alt="Eastern Newt" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐸 Amphibian</div>
+      <div class="explore-card-name">Eastern Newt</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/elasmotherium.html" class="explore-card" data-cat="extinct">
+    <img src="images/Elasmotherium1.jpg" alt="Elasmotherium" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦕 Extinct</div>
+      <div class="explore-card-name">Elasmotherium</div>
+      <span class="status-badge status-ex">EX</span>
+    </div>
+  </a>
+
+  <a href="detail/emperor-angelfish.html" class="explore-card" data-cat="marine">
+    <img src="images/Emperor Angelfish1.jpg" alt="Emperor Angelfish" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐋 Marine</div>
+      <div class="explore-card-name">Emperor Angelfish</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/penguin.html" class="explore-card" data-cat="bird">
+    <img src="images/Emperor Penguin1.webp" alt="Emperor Penguin" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦅 Bird</div>
+      <div class="explore-card-name">Emperor Penguin</div>
+      <span class="status-badge status-vu">VU</span>
+    </div>
+  </a>
+
+  <a href="detail/emperor-scorpion.html" class="explore-card" data-cat="insect">
+    <img src="images/Emperor Scorpion1.jpg" alt="Emperor Scorpion" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦋 Insect</div>
+      <div class="explore-card-name">Emperor Scorpion</div>
+      <span class="status-badge status-vu">VU</span>
+    </div>
+  </a>
+
+  <a href="detail/ethiopian-wolf.html" class="explore-card" data-cat="endangered">
+    <img src="images/Ethiopian Wolf1.jpg" alt="Ethiopian Wolf" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🔴 Endangered</div>
+      <div class="explore-card-name">Ethiopian Wolf</div>
+      <span class="status-badge status-en">EN</span>
+    </div>
+  </a>
+
+  <a href="detail/eurasian-lynx.html" class="explore-card" data-cat="mammal">
+    <img src="images/Eurasian Lynx1.webp" alt="Eurasian Lynx" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦁 Mammal</div>
+      <div class="explore-card-name">Eurasian Lynx</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/fire-salamander.html" class="explore-card" data-cat="amphibian">
+    <img src="images/Fire Salamander1.jpg" alt="Fire Salamander" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐸 Amphibian</div>
+      <div class="explore-card-name">Fire Salamander</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/fossa.html" class="explore-card" data-cat="mammal">
+    <img src="images/Fossa1.jpg" alt="Fossa" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦁 Mammal</div>
+      <div class="explore-card-name">Fossa</div>
+      <span class="status-badge status-vu">VU</span>
+    </div>
+  </a>
+
+  <a href="detail/fox-sparrow.html" class="explore-card" data-cat="bird">
+    <img src="images/Fox Sparrow1.avif" alt="Fox Sparrow" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦅 Bird</div>
+      <div class="explore-card-name">Fox Sparrow</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/frilled-lizard.html" class="explore-card" data-cat="reptile">
+    <img src="images/Frilled Lizard1.jpg" alt="Frilled Lizard" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐊 Reptile</div>
+      <div class="explore-card-name">Frilled Lizard</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/gerenuk.html" class="explore-card" data-cat="mammal">
+    <img src="images/Gerenuk1.webp" alt="Gerenuk" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦁 Mammal</div>
+      <div class="explore-card-name">Gerenuk</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/gharials.html" class="explore-card" data-cat="endangered">
+    <img src="images/Gharial1.jpeg" alt="Gharial" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🔴 Endangered</div>
+      <div class="explore-card-name">Gharial</div>
+      <span class="status-badge status-cr">CR</span>
+    </div>
+  </a>
+
+  <a href="detail/giant-african-bullfrog.html" class="explore-card" data-cat="amphibian">
+    <img src="images/Giant African Bullfrog1.jpg" alt="Giant African Bullfrog" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐸 Amphibian</div>
+      <div class="explore-card-name">Giant African Bullfrog</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/giant-isopod.html" class="explore-card" data-cat="marine">
+    <img src="images/Giant Isopod1.webp" alt="Giant Isopod" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐋 Marine</div>
+      <div class="explore-card-name">Giant Isopod</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+
+  <a href="detail/giant-water-bug.html" class="explore-card" data-cat="insect">
+    <img src="images/Giant Water Bug1.webp" alt="Giant Water Bug" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦋 Insect</div>
+      <div class="explore-card-name">Giant Water Bug</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/gila-monster.html" class="explore-card" data-cat="reptile">
+    <img src="images/Gila Monster1.jpg" alt="Gila Monster" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐊 Reptile</div>
+      <div class="explore-card-name">Gila Monster</div>
+      <span class="status-badge status-nt">NT</span>
+    </div>
+  </a>
+
+  <a href="detail/golden-crowned-kinglet.html" class="explore-card" data-cat="bird">
+    <img src="images/Golden-crowned Kinglet1.webp" alt="Golden-crowned Kinglet" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦅 Bird</div>
+      <div class="explore-card-name">Golden-crowned Kinglet</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/owl.html" class="explore-card" data-cat="bird">
+    <img src="images/Great Horned Owl1.jpg" alt="Great Horned Owl" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦅 Bird</div>
+      <div class="explore-card-name">Great Horned Owl</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/flamingo.html" class="explore-card" data-cat="bird">
+    <img src="images/Greater Flamingo1.jpeg" alt="Greater Flamingo" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦅 Bird</div>
+      <div class="explore-card-name">Greater Flamingo</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/grizzly-bear.html" class="explore-card" data-cat="mammal">
+    <img src="images/Grizzly Bear1.webp" alt="Grizzly Bear" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦁 Mammal</div>
+      <div class="explore-card-name">Grizzly Bear</div>
+      <span class="status-badge status-en">EN</span>
+    </div>
+  </a>
+
+  <a href="detail/harlequin-beetle.html" class="explore-card" data-cat="insect">
+    <img src="images/Harlequin Beetle1.jpg" alt="Harlequin Beetle" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦋 Insect</div>
+      <div class="explore-card-name">Harlequin Beetle</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/harpy-eagle.html" class="explore-card" data-cat="bird">
+    <img src="images/Harpy Eagle1.jpg" alt="Harpy Eagle" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦅 Bird</div>
+      <div class="explore-card-name">Harpy Eagle</div>
+      <span class="status-badge status-vu">VU</span>
+    </div>
+  </a>
+
+  <a href="detail/hawksbill-turtle.html" class="explore-card" data-cat="endangered">
+    <img src="https://images.squarespace-cdn.com/content/v1/5b80290bee1759a50e3a86b3/1539385364392-6BTBRN64MVRA3D7WVUBZ/hawksbill-nicolas-pilcher.jpg" alt="Hawksbill Sea Turtle" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🔴 Endangered</div>
+      <div class="explore-card-name">Hawksbill Sea Turtle</div>
+      <span class="status-badge status-cr">CR</span>
+    </div>
+  </a>
+
+  <a href="detail/hellbender.html" class="explore-card" data-cat="amphibian">
+    <img src="images/Hellbender1.avif" alt="Hellbender" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐸 Amphibian</div>
+      <div class="explore-card-name">Hellbender</div>
+      <span class="status-badge status-nt">NT</span>
+    </div>
+  </a>
+
+  <a href="detail/iguanodon.html" class="explore-card" data-cat="extinct">
+    <img src="images/Iguanodon1.jpg" alt="Iguanodon" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦕 Extinct</div>
+      <div class="explore-card-name">Iguanodon</div>
+      <span class="status-badge status-ex">EX</span>
+    </div>
+  </a>
+
+  <a href="detail/immortal-jellyfish.html" class="explore-card" data-cat="marine">
+    <img src="images/Immortal Jellyfish1.jpg" alt="Immortal Jellyfish" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐋 Marine</div>
+      <div class="explore-card-name">Immortal Jellyfish</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/indian-pangolin.html" class="explore-card" data-cat="mammal">
+    <img src="images/Indian Pangolin1.jpg" alt="Indian Pangolin" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦁 Mammal</div>
+      <div class="explore-card-name">Indian Pangolin</div>
+      <span class="status-badge status-vu">VU</span>
+    </div>
+  </a>
+
+  <a href="detail/italian-crested-newt.html" class="explore-card" data-cat="amphibian">
+    <img src="images/Italian Crested Newt1.jpeg" alt="Italian Crested Newt" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐸 Amphibian</div>
+      <div class="explore-card-name">Italian Crested Newt</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/ivory-gull.html" class="explore-card" data-cat="bird">
+    <img src="images/Ivory Gull1.jpg" alt="Ivory Gull" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦅 Bird</div>
+      <div class="explore-card-name">Ivory Gull</div>
+      <span class="status-badge status-vu">VU</span>
+    </div>
+  </a>
+
+  <a href="detail/jacksons-chameleon.html" class="explore-card" data-cat="reptile">
+    <img src="images/Jackson's Chameleon1.jpg" alt="Jackson's Chameleon" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐊 Reptile</div>
+      <div class="explore-card-name">Jackson's Chameleon</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/japanese-serow.html" class="explore-card" data-cat="mammal">
+    <img src="images/Japanese Serow1.webp" alt="Japanese Serow" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦁 Mammal</div>
+      <div class="explore-card-name">Japanese Serow</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/juniper-titmouse.html" class="explore-card" data-cat="bird">
+    <img src="images/Juniper Titmouse1.jpg" alt="Juniper Titmouse" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦅 Bird</div>
+      <div class="explore-card-name">Juniper Titmouse</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/kakapo.html" class="explore-card" data-cat="endangered">
+    <img src="images/Kakapo1.jpeg" alt="Kakapo" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🔴 Endangered</div>
+      <div class="explore-card-name">Kakapo</div>
+      <span class="status-badge status-cr">CR</span>
+    </div>
+  </a>
+
+  <a href="detail/kangaroo-rat.html" class="explore-card" data-cat="mammal">
+    <img src="images/Kangaroo Rat1.jpg" alt="Kangaroo Rat" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦁 Mammal</div>
+      <div class="explore-card-name">Kangaroo Rat</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/kihansi-spray-toad.html" class="explore-card" data-cat="amphibian">
+    <img src="images/Kihansi Spray Toad1.jpg" alt="Kihansi Spray Toad" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐸 Amphibian</div>
+      <div class="explore-card-name">Kihansi Spray Toad</div>
+      <span class="status-badge status-cr">CR</span>
+    </div>
+  </a>
+
+  <a href="detail/king-cobra.html" class="explore-card" data-cat="reptile">
+    <img src="images/King Cobra1.webp" alt="King Cobra" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐊 Reptile</div>
+      <div class="explore-card-name">King Cobra</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/king-vulture.html" class="explore-card" data-cat="bird">
+    <img src="images/King Vulture1.jpg" alt="King Vulture" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦅 Bird</div>
+      <div class="explore-card-name">King Vulture</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/komodo-dragon.html" class="explore-card" data-cat="reptile">
+    <img src="images/Komodo Dragon1.avif" alt="Komodo Dragon" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐊 Reptile</div>
+      <div class="explore-card-name">Komodo Dragon</div>
+      <span class="status-badge status-en">EN</span>
+    </div>
+  </a>
+
+  <a href="detail/largetooth-sawfish.html" class="explore-card" data-cat="endangered">
+    <img src="images/Largetooth Sawfish1.jpg" alt="Largetooth Sawfish" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🔴 Endangered</div>
+      <div class="explore-card-name">Largetooth Sawfish</div>
+      <span class="status-badge status-cr">CR</span>
+    </div>
+  </a>
+
+  <a href="detail/long-eared-jerboa.html" class="explore-card" data-cat="mammal">
+    <img src="images/Long-eared Jerboa 1.webp" alt="Long-eared Jerboa" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦁 Mammal</div>
+      <div class="explore-card-name">Long-eared Jerboa</div>
+      <span class="status-badge status-vu">VU</span>
+    </div>
+  </a>
+
+  <a href="detail/madagascar-hissing-cockroach.html" class="explore-card" data-cat="insect">
+    <img src="images/Madagascar Hissing Cockroach1.jpeg" alt="Madagascar Hissing Cockroach" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦋 Insect</div>
+      <div class="explore-card-name">Madagascar Hissing Cockroach</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/malayan-tapir.html" class="explore-card" data-cat="endangered">
+    <img src="images/Malayan Tapir1.jpg" alt="Malayan Tapir" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🔴 Endangered</div>
+      <div class="explore-card-name">Malayan Tapir</div>
+      <span class="status-badge status-en">EN</span>
+    </div>
+  </a>
+
+  <a href="detail/margay.html" class="explore-card" data-cat="mammal">
+    <img src="images/Margay1.jpg" alt="Margay" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦁 Mammal</div>
+      <div class="explore-card-name">Margay</div>
+      <span class="status-badge status-nt">NT</span>
+    </div>
+  </a>
+
+  <a href="detail/mountain-gorilla.html" class="explore-card" data-cat="endangered">
+    <img src="images/Mountain Gorilla1.jpg" alt="Mountain Gorilla" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🔴 Endangered</div>
+      <div class="explore-card-name">Mountain Gorilla</div>
+      <span class="status-badge status-en">EN</span>
+    </div>
+  </a>
+
+  <a href="detail/narwhal.html" class="explore-card" data-cat="endangered">
+    <img src="images/Narwhal1.jpg" alt="Narwhal" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🔴 Endangered</div>
+      <div class="explore-card-name">Narwhal</div>
+      <span class="status-badge status-nt">NT</span>
+    </div>
+  </a>
+
+  <a href="detail/nile-monitor.html" class="explore-card" data-cat="reptile">
+    <img src="images/Nile Monitor1.jpg" alt="Nile Monitor" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐊 Reptile</div>
+      <div class="explore-card-name">Nile Monitor</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/northern-flicker.html" class="explore-card" data-cat="bird">
+    <img src="images/Northern Flicker1.jpg" alt="Northern Flicker" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦅 Bird</div>
+      <div class="explore-card-name">Northern Flicker</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/numbat.html" class="explore-card" data-cat="mammal">
+    <img src="images/Numbat1.jpg" alt="Numbat" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦁 Mammal</div>
+      <div class="explore-card-name">Numbat</div>
+      <span class="status-badge status-en">EN</span>
+    </div>
+  </a>
+
+  <a href="detail/oarfish.html" class="explore-card" data-cat="marine">
+    <img src="images/Oarfish1.jpg" alt="Oarfish" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐋 Marine</div>
+      <div class="explore-card-name">Oarfish</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/okapi.html" class="explore-card" data-cat="mammal">
+    <img src="images/Okapi1.jpg" alt="Okapi" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦁 Mammal</div>
+      <div class="explore-card-name">Okapi</div>
+      <span class="status-badge status-en">EN</span>
+    </div>
+  </a>
+
+  <a href="detail/olm.html" class="explore-card" data-cat="amphibian">
+    <img src="images/Olm1.jpg" alt="Olm" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐸 Amphibian</div>
+      <div class="explore-card-name">Olm</div>
+      <span class="status-badge status-vu">VU</span>
+    </div>
+  </a>
+
+  <a href="detail/onychodus.html" class="explore-card" data-cat="extinct">
+    <img src="images/Onychodus1.jpg" alt="Onychodus" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦕 Extinct</div>
+      <div class="explore-card-name">Onychodus</div>
+      <span class="status-badge status-ex">EX</span>
+    </div>
+  </a>
+
+  <a href="detail/ornate-box-turtle.html" class="explore-card" data-cat="reptile">
+    <img src="images/Ornate Box Turtle1.webp" alt="Ornate Box Turtle" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐊 Reptile</div>
+      <div class="explore-card-name">Ornate Box Turtle</div>
+      <span class="status-badge status-nt">NT</span>
+    </div>
+  </a>
+
+  <a href="detail/osprey.html" class="explore-card" data-cat="bird">
+    <img src="images/Osprey1.jpg" alt="Osprey" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦅 Bird</div>
+      <div class="explore-card-name">Osprey</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/pancake-tortoise.html" class="explore-card" data-cat="reptile">
+    <img src="images/Pancake Tortoise1.jpg" alt="Pancake Tortoise" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐊 Reptile</div>
+      <div class="explore-card-name">Pancake Tortoise</div>
+      <span class="status-badge status-vu">VU</span>
+    </div>
+  </a>
+
+  <a href="detail/passenger-pigeon.html" class="explore-card" data-cat="extinct">
+    <img src="images/Passenger Pigeon1.jpg" alt="Passenger Pigeon" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦕 Extinct</div>
+      <div class="explore-card-name">Passenger Pigeon</div>
+      <span class="status-badge status-ex">EX</span>
+    </div>
+  </a>
+
+  <a href="detail/patas-monkey.html" class="explore-card" data-cat="mammal">
+    <img src="images/Patas Monkey1.jpg" alt="Patas Monkey" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦁 Mammal</div>
+      <div class="explore-card-name">Patas Monkey</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/peacock-spider.html" class="explore-card" data-cat="insect">
+    <img src="images/Peacock Spider1.jpg" alt="Peacock Spider" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦋 Insect</div>
+      <div class="explore-card-name">Peacock Spider</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/pied-avocet.html" class="explore-card" data-cat="bird">
+    <img src="images/Pied Avocet1.jpg" alt="Pied Avocet" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦅 Bird</div>
+      <div class="explore-card-name">Pied Avocet</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/dart-frog.html" class="explore-card" data-cat="amphibian">
+    <img src="images/Poison Dart Frog1.jpg" alt="Poison Dart Frog" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐸 Amphibian</div>
+      <div class="explore-card-name">Poison Dart Frog</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/polar-bear.html" class="explore-card" data-cat="mammal">
+    <img src="images/Polar Bear1.jpg" alt="Polar Bear" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦁 Mammal</div>
+      <div class="explore-card-name">Polar Bear</div>
+      <span class="status-badge status-vu">VU</span>
+    </div>
+  </a>
+
+  <a href="detail/purple-frog.html" class="explore-card" data-cat="amphibian">
+    <img src="images/Purple Frog1.webp" alt="Purple Frog" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐸 Amphibian</div>
+      <div class="explore-card-name">Purple Frog</div>
+      <span class="status-badge status-en">EN</span>
+    </div>
+  </a>
+
+  <a href="detail/seahorse.html" class="explore-card" data-cat="marine">
+    <img src="images/Pygmy Seahorse1.webp" alt="Pygmy Seahorse" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐋 Marine</div>
+      <div class="explore-card-name">Pygmy Seahorse</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/pygmy-three-toed-sloth.html" class="explore-card" data-cat="endangered">
+    <img src="images/Pygmy Three-toed Sloth1.jpg" alt="Pygmy Three-toed Sloth" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🔴 Endangered</div>
+      <div class="explore-card-name">Pygmy Three-toed Sloth</div>
+      <span class="status-badge status-cr">CR</span>
+    </div>
+  </a>
+
+  <a href="detail/quagga.html" class="explore-card" data-cat="extinct">
+    <img src="images/Quagga1.jpg" alt="Quagga" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦕 Extinct</div>
+      <div class="explore-card-name">Quagga</div>
+      <span class="status-badge status-ex">EX</span>
+    </div>
+  </a>
+
+  <a href="detail/queen-alexandras-birdwing.html" class="explore-card" data-cat="endangered">
+    <img src="images/Queen Alexandra's Birdwing1.jpg" alt="Queen Alexandra's Birdwing" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🔴 Endangered</div>
+      <div class="explore-card-name">Queen Alexandra's Birdwing</div>
+      <span class="status-badge status-en">EN</span>
+    </div>
+  </a>
+
+  <a href="detail/quetzal.html" class="explore-card" data-cat="bird">
+    <img src="images/Quetzal1.webp" alt="Quetzal" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦅 Bird</div>
+      <div class="explore-card-name">Quetzal</div>
+      <span class="status-badge status-nt">NT</span>
+    </div>
+  </a>
+
+  <a href="detail/quillback-rockfish.html" class="explore-card" data-cat="marine">
+    <img src="images/Quillback Rockfish1.jpg" alt="Quillback Rockfish" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐋 Marine</div>
+      <div class="explore-card-name">Quillback Rockfish</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/quokka.html" class="explore-card" data-cat="mammal">
+    <img src="images/Quokka1.jpg" alt="Quokka" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦁 Mammal</div>
+      <div class="explore-card-name">Quokka</div>
+      <span class="status-badge status-vu">VU</span>
+    </div>
+  </a>
+
+  <a href="detail/red-panda.html" class="explore-card" data-cat="mammal">
+    <img src="images/Red Panda1.avif" alt="Red Panda" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦁 Mammal</div>
+      <div class="explore-card-name">Red Panda</div>
+      <span class="status-badge status-en">EN</span>
+    </div>
+  </a>
+
+  <a href="detail/red-wolf.html" class="explore-card" data-cat="endangered">
+    <img src="images/Red Wolf1.avif" alt="Red Wolf" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🔴 Endangered</div>
+      <div class="explore-card-name">Red Wolf</div>
+      <span class="status-badge status-cr">CR</span>
+    </div>
+  </a>
+
+  <a href="detail/red-eared-slider.html" class="explore-card" data-cat="reptile">
+    <img src="images/Red-eared Slider1.jpg" alt="Red-eared Slider" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐊 Reptile</div>
+      <div class="explore-card-name">Red-eared Slider</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/tree-frog.html" class="explore-card" data-cat="amphibian">
+    <img src="images/Red-eyed Tree Frog1.jpg" alt="Red-eyed Tree Frog" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐸 Amphibian</div>
+      <div class="explore-card-name">Red-eyed Tree Frog</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/red-winged-blackbird.html" class="explore-card" data-cat="bird">
+    <img src="images/Red-winged Blackbird1.jpg" alt="Red-winged Blackbird" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦅 Bird</div>
+      <div class="explore-card-name">Red-winged Blackbird</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/rhamphorhynchus.html" class="explore-card" data-cat="extinct">
+    <img src="images/Rhamphorhynchus1.jpg" alt="Rhamphorhynchus" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦕 Extinct</div>
+      <div class="explore-card-name">Rhamphorhynchus</div>
+      <span class="status-badge status-ex">EX</span>
+    </div>
+  </a>
+
+  <a href="detail/ribbon-eel.html" class="explore-card" data-cat="marine">
+    <img src="images/Ribbon Eel1.jpg" alt="Ribbon Eel" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐋 Marine</div>
+      <div class="explore-card-name">Ribbon Eel</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/sandhill-crane.html" class="explore-card" data-cat="bird">
+    <img src="images/Sandhill Crane1.jpeg" alt="Sandhill Crane" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦅 Bird</div>
+      <div class="explore-card-name">Sandhill Crane</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/six-spotted-tiger-beetle.html" class="explore-card" data-cat="insect">
+    <img src="images/Six-spotted Tiger Beetle1.jpg" alt="Six-spotted Tiger Beetle" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦋 Insect</div>
+      <div class="explore-card-name">Six-spotted Tiger Beetle</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/smilodon.html" class="explore-card" data-cat="extinct">
+    <img src="images/Smilodon1.webp" alt="Smilodon" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦕 Extinct</div>
+      <div class="explore-card-name">Smilodon</div>
+      <span class="status-badge status-ex">EX</span>
+    </div>
+  </a>
+
+  <a href="detail/solenodon.html" class="explore-card" data-cat="mammal">
+    <img src="images/Solenodon1.webp" alt="Solenodon" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦁 Mammal</div>
+      <div class="explore-card-name">Solenodon</div>
+      <span class="status-badge status-en">EN</span>
+    </div>
+  </a>
+
+  <a href="detail/spiny-dogfish.html" class="explore-card" data-cat="marine">
+    <img src="images/Spiny Dogfish1.jpg" alt="Spiny Dogfish" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐋 Marine</div>
+      <div class="explore-card-name">Spiny Dogfish</div>
+      <span class="status-badge status-vu">VU</span>
+    </div>
+  </a>
+
+  <a href="detail/sumatran-tiger.html" class="explore-card" data-cat="endangered">
+    <img src="images/Sumatran Tiger1.jpg" alt="Sumatran Tiger" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🔴 Endangered</div>
+      <div class="explore-card-name">Sumatran Tiger</div>
+      <span class="status-badge status-cr">CR</span>
+    </div>
+  </a>
+
+  <a href="detail/tarantula-hawk-wasp.html" class="explore-card" data-cat="insect">
+    <img src="images/Tarantula Hawk Wasp1.avif" alt="Tarantula Hawk Wasp" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦋 Insect</div>
+      <div class="explore-card-name">Tarantula Hawk Wasp</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/tarsier.html" class="explore-card" data-cat="mammal">
+    <img src="images/Tarsier1.jpg" alt="Tarsier" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦁 Mammal</div>
+      <div class="explore-card-name">Tarsier</div>
+      <span class="status-badge status-nt">NT</span>
+    </div>
+  </a>
+
+  <a href="detail/tasselled-wobbegong.html" class="explore-card" data-cat="marine">
+    <img src="images/Tasselled Wobbegong1.webp" alt="Tasselled Wobbegong" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐋 Marine</div>
+      <div class="explore-card-name">Tasselled Wobbegong</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/thylacine.html" class="explore-card" data-cat="extinct">
+    <img src="images/Thylacine1.webp" alt="Thylacine" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦕 Extinct</div>
+      <div class="explore-card-name">Thylacine</div>
+      <span class="status-badge status-ex">EX</span>
+    </div>
+  </a>
+
+  <a href="detail/thylacosmilus.html" class="explore-card" data-cat="extinct">
+    <img src="images/Thylacosmilus1.jpg" alt="Thylacosmilus" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦕 Extinct</div>
+      <div class="explore-card-name">Thylacosmilus</div>
+      <span class="status-badge status-ex">EX</span>
+    </div>
+  </a>
+
+  <a href="detail/tiger-snake.html" class="explore-card" data-cat="reptile">
+    <img src="images/Tiger Snake1.jpg" alt="Tiger Snake" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐊 Reptile</div>
+      <div class="explore-card-name">Tiger Snake</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/titicaca-water-frog.html" class="explore-card" data-cat="amphibian">
+    <img src="images/Titicaca Water Frog1.jpg" alt="Titicaca Water Frog" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐸 Amphibian</div>
+      <div class="explore-card-name">Titicaca Water Frog</div>
+      <span class="status-badge status-cr">CR</span>
+    </div>
+  </a>
+
+  <a href="detail/toco-toucan.html" class="explore-card" data-cat="bird">
+    <img src="images/Toco Toucan1.jpg" alt="Toco Toucan" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦅 Bird</div>
+      <div class="explore-card-name">Toco Toucan</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/twice-stabbed-lady-beetle.html" class="explore-card" data-cat="insect">
+    <img src="images/Twice-stabbed Lady Beetle1.jpg" alt="Twice-stabbed Lady Beetle" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦋 Insect</div>
+      <div class="explore-card-name">Twice-stabbed Lady Beetle</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/uakari.html" class="explore-card" data-cat="mammal">
+    <img src="images/Uakari1.jpg" alt="Uakari" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦁 Mammal</div>
+      <div class="explore-card-name">Uakari</div>
+      <span class="status-badge status-vu">VU</span>
+    </div>
+  </a>
+
+  <a href="detail/uintatherium.html" class="explore-card" data-cat="extinct">
+    <img src="images/Uintatherium1.jpg" alt="Uintatherium" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦕 Extinct</div>
+      <div class="explore-card-name">Uintatherium</div>
+      <span class="status-badge status-ex">EX</span>
+    </div>
+  </a>
+
+  <a href="detail/umbrella-cockatoo.html" class="explore-card" data-cat="bird">
+    <img src="images/Umbrella Cockatoo1.jpg" alt="Umbrella Cockatoo" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦅 Bird</div>
+      <div class="explore-card-name">Umbrella Cockatoo</div>
+      <span class="status-badge status-vu">VU</span>
+    </div>
+  </a>
+
+  <a href="detail/uromastyx.html" class="explore-card" data-cat="reptile">
+    <img src="images/Uromastyx1.jpg" alt="Uromastyx" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐊 Reptile</div>
+      <div class="explore-card-name">Uromastyx</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/valdosaurus.html" class="explore-card" data-cat="extinct">
+    <img src="images/Valdosaurus1.jpg" alt="Valdosaurus" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦕 Extinct</div>
+      <div class="explore-card-name">Valdosaurus</div>
+      <span class="status-badge status-ex">EX</span>
+    </div>
+  </a>
+
+  <a href="detail/vampire-squid.html" class="explore-card" data-cat="marine">
+    <img src="images/Vampire Squid1.avif" alt="Vampire Squid" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐋 Marine</div>
+      <div class="explore-card-name">Vampire Squid</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/vaquita.html" class="explore-card" data-cat="endangered">
+    <img src="images/Vaquita1.jpg" alt="Vaquita" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🔴 Endangered</div>
+      <div class="explore-card-name">Vaquita</div>
+      <span class="status-badge status-cr">CR</span>
+    </div>
+  </a>
+
+  <a href="detail/varied-thrush.html" class="explore-card" data-cat="bird">
+    <img src="images/Varied Thrush1.jpg" alt="Varied Thrush" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦅 Bird</div>
+      <div class="explore-card-name">Varied Thrush</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/chameleon.html" class="explore-card" data-cat="reptile">
+    <img src="images/Veiled Chameleon1.jpg" alt="Veiled Chameleon" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐊 Reptile</div>
+      <div class="explore-card-name">Veiled Chameleon</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/velvet-ant.html" class="explore-card" data-cat="insect">
+    <img src="images/Velvet Ant1.webp" alt="Velvet Ant" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦋 Insect</div>
+      <div class="explore-card-name">Velvet Ant</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/vietnamese-mossy-frog.html" class="explore-card" data-cat="amphibian">
+    <img src="images/Vietnamese Mossy Frog1.jpg" alt="Vietnamese Mossy Frog" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐸 Amphibian</div>
+      <div class="explore-card-name">Vietnamese Mossy Frog</div>
+      <span class="status-badge status-vu">VU</span>
+    </div>
+  </a>
+
+  <a href="detail/wakaleo.html" class="explore-card" data-cat="extinct">
+    <img src="images/Wakaleo1.jpg" alt="Wakaleo" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦕 Extinct</div>
+      <div class="explore-card-name">Wakaleo</div>
+      <span class="status-badge status-ex">EX</span>
+    </div>
+  </a>
+
+  <a href="detail/walking-stick.html" class="explore-card" data-cat="insect">
+    <img src="images/Walking Stick1.avif" alt="Walking Stick" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦋 Insect</div>
+      <div class="explore-card-name">Walking Stick</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/warty-sea-cucumber.html" class="explore-card" data-cat="marine">
+    <img src="images/Warty Sea Cucumber1.jpg" alt="Warty Sea Cucumber" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐋 Marine</div>
+      <div class="explore-card-name">Warty Sea Cucumber</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/water-monitor.html" class="explore-card" data-cat="reptile">
+    <img src="images/Water Monitor1.jpg" alt="Water Monitor" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐊 Reptile</div>
+      <div class="explore-card-name">Water Monitor</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/water-opossum.html" class="explore-card" data-cat="mammal">
+    <img src="images/Water Opossum1.webp" alt="Water Opossum" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦁 Mammal</div>
+      <div class="explore-card-name">Water Opossum</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/waxy-monkey-tree-frog.html" class="explore-card" data-cat="amphibian">
+    <img src="images/Waxy Monkey Tree Frog1.jpg" alt="Waxy Monkey Tree Frog" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐸 Amphibian</div>
+      <div class="explore-card-name">Waxy Monkey Tree Frog</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/western-fence-lizard.html" class="explore-card" data-cat="reptile">
+    <img src="images/Western Fence Lizard1.jpeg" alt="Western Fence Lizard" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐊 Reptile</div>
+      <div class="explore-card-name">Western Fence Lizard</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/western-honey-bee.html" class="explore-card" data-cat="insect">
+    <img src="images/Western Honey Bee1.jpg" alt="Western Honey Bee" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦋 Insect</div>
+      <div class="explore-card-name">Western Honey Bee</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/western-swamp-tortoise.html" class="explore-card" data-cat="endangered">
+    <img src="images/Western Swamp Tortoise1.jpg" alt="Western Swamp Tortoise" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🔴 Endangered</div>
+      <div class="explore-card-name">Western Swamp Tortoise</div>
+      <span class="status-badge status-cr">CR</span>
+    </div>
+  </a>
+
+  <a href="detail/wilsons-warbler.html" class="explore-card" data-cat="bird">
+    <img src="images/Wilson's Warbler1.jpeg" alt="Wilson's Warbler" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦅 Bird</div>
+      <div class="explore-card-name">Wilson's Warbler</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/mammoth.html" class="explore-card" data-cat="extinct">
+    <img src="images/Woolly Mammoth1.avif" alt="Woolly Mammoth" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦕 Extinct</div>
+      <div class="explore-card-name">Woolly Mammoth</div>
+      <span class="status-badge status-ex">EX</span>
+    </div>
+  </a>
+
+
+  <a href="detail/xantuss-hummingbird.html" class="explore-card" data-cat="bird">
+    <img src="images/Xantus's Hummingbird1.jpg" alt="Xantus's Hummingbird" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦅 Bird</div>
+      <div class="explore-card-name">Xantus's Hummingbird</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/xerus.html" class="explore-card" data-cat="mammal">
+    <img src="images/Xerus1.jpg" alt="Xerus" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦁 Mammal</div>
+      <div class="explore-card-name">Xerus</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/xiphactinus.html" class="explore-card" data-cat="extinct">
+    <img src="images/Xiphactinus1.jpg" alt="Xiphactinus" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦕 Extinct</div>
+      <div class="explore-card-name">Xiphactinus</div>
+      <span class="status-badge status-ex">EX</span>
+    </div>
+  </a>
+
+  <a href="detail/horseshoe-crab.html" class="explore-card" data-cat="marine">
+    <img src="images/Xiphosura (Horseshoe Crab)1.jpeg" alt="Xiphosura (Horseshoe Crab)" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐋 Marine</div>
+      <div class="explore-card-name">Xiphosura (Horseshoe Crab)</div>
+      <span class="status-badge status-vu">VU</span>
+    </div>
+  </a>
+
+  <a href="detail/yangchuanosaurus.html" class="explore-card" data-cat="extinct">
+    <img src="images/Yangchuanosaurus1.jpg" alt="Yangchuanosaurus" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦕 Extinct</div>
+      <div class="explore-card-name">Yangchuanosaurus</div>
+      <span class="status-badge status-ex">EX</span>
+    </div>
+  </a>
+
+  <a href="detail/yangtze-giant-softshell-turtle.html" class="explore-card" data-cat="endangered">
+    <img src="images/Yangtze Giant Softshell Turtle1.jpg" alt="Yangtze Giant Softshell Turtle" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🔴 Endangered</div>
+      <div class="explore-card-name">Yangtze Giant Softshell Turtle</div>
+      <span class="status-badge status-cr">CR</span>
+    </div>
+  </a>
+
+  <a href="detail/yangtze-river-dolphin.html" class="explore-card" data-cat="endangered">
+    <img src="images/Yangtze River Dolphin1.webp" alt="Yangtze River Dolphin" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🔴 Endangered</div>
+      <div class="explore-card-name">Yangtze River Dolphin</div>
+      <span class="status-badge status-ex">EX</span>
+    </div>
+  </a>
+
+  <a href="detail/yellow-garden-spider.html" class="explore-card" data-cat="insect">
+    <img src="images/Yellow Garden Spider1.jpg" alt="Yellow Garden Spider" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦋 Insect</div>
+      <div class="explore-card-name">Yellow Garden Spider</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/yellow-mongoose.html" class="explore-card" data-cat="mammal">
+    <img src="images/Yellow Mongoose1.jpg" alt="Yellow Mongoose" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦁 Mammal</div>
+      <div class="explore-card-name">Yellow Mongoose</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/yellow-tang.html" class="explore-card" data-cat="marine">
+    <img src="images/Yellow Tang1.jpg" alt="Yellow Tang" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐋 Marine</div>
+      <div class="explore-card-name">Yellow Tang</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/yellow-banded-poison-dart-frog.html" class="explore-card" data-cat="amphibian">
+    <img src="images/Yellow-banded Poison Dart Frog1.jpg" alt="Yellow-banded Poison Dart Frog" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐸 Amphibian</div>
+      <div class="explore-card-name">Yellow-banded Poison Dart Frog</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/yellow-bellied-sea-snake.html" class="explore-card" data-cat="reptile">
+    <img src="images/Yellow-bellied Sea Snake1.jpg" alt="Yellow-bellied Sea Snake" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐊 Reptile</div>
+      <div class="explore-card-name">Yellow-bellied Sea Snake</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/yellow-headed-blackbird.html" class="explore-card" data-cat="bird">
+    <img src="images/Yellow-headed Blackbird1.webp" alt="Yellow-headed Blackbird" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦅 Bird</div>
+      <div class="explore-card-name">Yellow-headed Blackbird</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/zanzibar-leopard.html" class="explore-card" data-cat="endangered">
+    <img src="images/Zanzibar Leopard1.jpg" alt="Zanzibar Leopard" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🔴 Endangered</div>
+      <div class="explore-card-name">Zanzibar Leopard</div>
+      <span class="status-badge status-cr">CR</span>
+    </div>
+  </a>
+
+  <a href="detail/zebra-duiker.html" class="explore-card" data-cat="endangered">
+    <img src="images/Zebra Duiker1.jpg" alt="Zebra Duiker" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🔴 Endangered</div>
+      <div class="explore-card-name">Zebra Duiker</div>
+      <span class="status-badge status-en">EN</span>
+    </div>
+  </a>
+
+  <a href="detail/zebra-finch.html" class="explore-card" data-cat="bird">
+    <img src="images/Zebra Finch1.jpg" alt="Zebra Finch" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦅 Bird</div>
+      <div class="explore-card-name">Zebra Finch</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/zebra-swallowtail-butterfly.html" class="explore-card" data-cat="insect">
+    <img src="images/Zebra Swallowtail Butterfly1.jpg" alt="Zebra Swallowtail Butterfly" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦋 Insect</div>
+      <div class="explore-card-name">Zebra Swallowtail Butterfly</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/zebra-tailed-lizard.html" class="explore-card" data-cat="reptile">
+    <img src="images/Zebra-tailed Lizard1.jpeg" alt="Zebra-tailed Lizard" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐊 Reptile</div>
+      <div class="explore-card-name">Zebra-tailed Lizard</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/zigzag-salamander.html" class="explore-card" data-cat="amphibian">
+    <img src="images/Zigzag Salamander1.jpg" alt="Zigzag Salamander" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🐸 Amphibian</div>
+      <div class="explore-card-name">Zigzag Salamander</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/zorilla.html" class="explore-card" data-cat="mammal">
+    <img src="images/Zorilla1.jpg" alt="Zorilla" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦁 Mammal</div>
+      <div class="explore-card-name">Zorilla</div>
+      <span class="status-badge status-lc">LC</span>
+    </div>
+  </a>
+
+  <a href="detail/zygohiza.html" class="explore-card" data-cat="extinct">
+    <img src="images/Zygorhiza1.jpg" alt="Zygorhiza" loading="lazy">
+    <div class="explore-card-info">
+      <div class="explore-card-cat">🦕 Extinct</div>
+      <div class="explore-card-name">Zygorhiza</div>
+      <span class="status-badge status-ex">EX</span>
+    </div>
+  </a>
+
+</div>
+
+<footer>
+  <span class="footer-logo">WildVerse</span>
+  <p>Explore the wonders of nature</p>
+</footer>
+
+
+</body>
+</html>
